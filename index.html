@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetCare</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="javascript.js"></script>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <img
+        class="mainContainerImg"
+        src="./assets/dog 1.png"
+        alt="Example Image"
+      />
+      <img
+        class="mainContainerImgPaw"
+        src="./assets/pngwing 2.png"
+        alt="Example Image"
+      />
+      <img
+        class="mainContainerImgCat"
+        src="./assets/pngwing 3.png"
+        alt="Example Image"
+      />
+      <div class="header">
+        <div class="headerImg">
+          <img src="./assets/Group 4.png" />
+        </div>
+        <div class="headerButtons">
+          <div
+            class="btnContainer headerBtnActive pointer"
+            data-section="start"
+          >
+            <span class="headerButtonsText pointer">Inicio</span>
+          </div>
+          <div class="btnContainer pointer" data-section="services">
+            <span class="headerButtonsText pointer">Serviços</span>
+          </div>
+          <div class="btnContainer pointer" data-section="helper">
+            <span class="headerButtonsText pointer">Como ajudar</span>
+          </div>
+          <div class="btnContainer pointer" data-section="faq">
+            <span class="headerButtonsText pointer">FAQs</span>
+          </div>
+        </div>
+      </div>
+      <div class="contentContainer">
+        <div id="start" class="contentContainerPage">
+          <div class="contentPart contentFirstPart">
+            <span class="contentPetText" style="margin-top: 130px"
+              >Um Pet para <br />
+              sua vida alegrar!</span
+            >
+            <span class="contentPetText2" style="margin-top: 10px"
+              >Open your doors and hearts to pets in need of a <br />
+              home and it will be thankful to you for the rest <br />
+              of their lives.</span
+            >
+            <div class="actionBtnContainer btnStyles">
+              <span class="contentActionBtn">Descubra</span>
+              <img src="./assets/ci_small-long-up.png" />
+            </div>
+          </div>
+          <div class="contentPart contentSecondPart">
+            <div class="infoContainer">
+              <div class="infoContainerTexts">
+                <span class="infoTextNumber" style="margin-bottom: 10px"
+                  >80</span
+                >
+                <span class="infoTextSpan">Esperando um Lar</span>
+              </div>
+              <div class="infoContainerTexts">
+                <span class="infoTextNumber" style="margin-bottom: 10px"
+                  >55</span
+                >
+                <span class="infoTextSpan">Adotados no último Ano</span>
+              </div>
+              <div class="infoContainerTexts" style="margin-right: 20px">
+                <span class="infoTextNumber" style="margin-bottom: 10px"
+                  >90</span
+                >
+                <span class="infoTextSpan">Resgatados</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: none" class="contentContainerPage" id="services">
+          <span>servicos</span>
+        </div>
+        <div style="display: none" class="contentContainerPage" id="helper">
+          <span>helper</span>
+        </div>
+        <div style="display: none" class="contentContainerPage" id="faq">
+          <span>faq</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  blockquote,
+  q {
+    quotes: none;
+  }
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: "";
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  .mainContainer {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .mainContainerImg {
+    position: absolute; /* Set the position of the image to absolute */
+    top: 30%; /* Adjust the top position as needed */
+    right: 90px; /* Adjust the left position as needed */
+    width: 450px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .mainContainerImgPaw {
+    position: absolute; /* Set the position of the image to absolute */
+    bottom: 1px;
+    left: 1px; /* Adjust the left position as needed */
+    width: 850px;
+    z-index: 0;
+  }
+  .mainContainerImgCat {
+    position: absolute; /* Set the position of the image to absolute */
+    bottom: 1px;
+    left: 40px; /* Adjust the left position as needed */
+    width: 200px;
+    z-index: 0;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-top: 57px;
+  }
+  .headerButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    padding-right: 100px;
+  }
+  .headerButtonsText {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .headerImg {
+    margin-left: 53px;
+  }
+  .contentContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+  .contentContainerPage {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+  .contentPart {
+    display: flex;
+    width: 50%;
+  }
+  .contentPetText {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 70.6px;
+  }
+  .contentPetText2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 150px;
+    margin-left: 10px;
+    line-height: 38px;
+  }
+  .contentActionBtn {
+    font-family: Homenaje;
+    font-size: 26px;
+    font-weight: 600;
+    padding-right: 10px;
+  }
+  .actionBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    border-radius: 60px;
+    width: 250px;
+    height: 50px;
+    margin-top: 40px;
+    box-shadow: -5px 7px 6px 0px rgba(0, 0, 0, 0.41);
+    background-color: white;
+  }
+  .contentSecondPart {
+    margin-bottom: 150px;
+    align-items: end;
+  }
+  .contentFirstPart {
+    display: flex;
+    flex-direction: column;
+    margin-left: 53px;
+  }
+  .infoContainer {
+    display: flex;
+    background: linear-gradient(
+      180deg,
+      rgba(217, 217, 217, 0.48) 0%,
+      rgba(217, 217, 217, 0.41) 100%
+    );
+    height: 150px;
+    padding-left: 30px;
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+    border-color: rgba(217, 217, 217, 0.41);
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .infoContainerTexts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .infoTextNumber {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .infoTextSpan {
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(96, 94, 94, 1);
+  }
+  .headerBtnActive {
+    background: radial-gradient(
+      91% 85.06% at 50% 0%,
+      #c6c2c2 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
+    border: 1px solid black;
+    border-radius: 56px;
+    cursor: pointer;
+  }
+  .btnContainer {
+    margin: 0px 20px;
+    padding: 0px 20px;
+    height: 57px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pointer {
+    cursor: pointer;
+  }
+</style>
