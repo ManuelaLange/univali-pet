@@ -35,11 +35,11 @@
           >
             <span class="headerButtonsText pointer">Inicio</span>
           </div>
-          <div class="btnContainer pointer" data-section="services">
-            <span class="headerButtonsText pointer">Serviços</span>
-          </div>
           <div class="btnContainer pointer" data-section="helper">
             <span class="headerButtonsText pointer">Como ajudar</span>
+          </div>
+          <div class="btnContainer pointer" data-section="donation">
+            <span class="headerButtonsText pointer">Doar</span>
           </div>
           <div class="btnContainer pointer" data-section="faq">
             <span class="headerButtonsText pointer">FAQs</span>
@@ -86,11 +86,44 @@
             </div>
           </div>
         </div>
-        <div style="display: none" class="contentContainerPage" id="services">
-          <span>servicos</span>
-        </div>
         <div style="display: none" class="contentContainerPage" id="helper">
-          <span>helper</span>
+          <span class="helperItems">  
+          <span class="helperContent">
+              <div>
+                <p class="helperTitle">Como ajudar</p><br>
+                <p class="helperSubTtile" style="font-size: 20px; text-align: center;">Saiba como você pode ajudar a salvar vidas</p>
+              </div>        
+            </span>
+            <span class="helperOptions">
+                <div class="helperDiv" style="background-color: rgba(132, 89, 130, 1)";
+                ><img src="assets/🦆 icon _Cat_.png" class="imgHelper">
+                <p style="margin-top: 30px;">Quero adotar um pet</p>
+                </div>
+                <div class="helperDiv" style="background-color: rgba(195, 180, 195, 1)">
+                  <img src="assets/🦆 icon _Paw_.png" class="imgHelper">
+                  <p style="margin-top: 30px;">Um pet precisa de um lar?</p>
+                </div>
+                <div class="helperDiv" style="background-color: rgba(255, 192, 157, 1)">
+                  <img src="assets/🦆 icon _donate heart_.png" class="imgHelper">
+                  <p style="margin-top: 30px;">Faça sua doação!</p>
+                </div>
+                <div class="helperDiv" style="background-color: rgba(242, 237, 214, 1)">
+                  <img src="assets/🦆 icon _Helping Hands_.png" class="imgHelper">
+                  <p style="margin-top: 30px;">Seja um voluntário!</p>
+                </div>
+             </span>
+            </span>
+          
+        </div>
+        <div style="display: none" class="contentContainerPage" id="donation">
+          <span class="helperItems">  
+            <span class="helperContent">
+                <div>
+                  <p class="helperTitle">Como ajudar</p><br>
+                  <p class="helperSubTtile" style="font-size: 20px; text-align: center;">Saiba como você pode ajudar a salvar vidas</p>
+                </div>        
+              </span>
+            </span>
         </div>
         <div style="display: none" class="contentContainerPage" id="faq">
           <span>faq</span>
@@ -396,4 +429,48 @@
   .pointer {
     cursor: pointer;
   }
+  
+  .helperItems{
+    display: inline;
+    width: 100%;
+  }
+  
+  .helperContent {
+    width: 100%;
+    height: 350px;
+    margin-top:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("assets/cat\ pngg\ 1.png");
+    background-repeat:no-repeat;
+    background-position-x: right;
+    background-color: rgba(230, 230, 230, 1);
+  }
+
+  .helperTitle{
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .helperOptions{
+    display:flex;
+    justify-content: space-between;
+
+  }
+  .helperDiv{
+    width: 382px;
+    padding: 40px;
+    height:250px;
+    font-size: 30px;
+    font-weight: bold;
+    }
+
+.imgHelper{
+  height: 70px;
+  width: 70px;
+}
+
+ 
 </style>
